@@ -1,0 +1,110 @@
+{
+ "model": "bigram",
+ "split": "val",
+ "beam": 4,
+ "perplexity": 23.643386670477966,
+ "overall": {
+  "cases": 2000,
+  "acc@1": 0.31036168132942327,
+  "acc@5": 0.6372596937113066,
+  "full_exact": 0.038,
+  "sugg_exact": 0.101,
+  "edit_sim": 0.23036842943402525,
+  "correctly_silent": 0.3801916932907348
+ },
+ "latency_p50_ms": 7.719630011706613,
+ "latency_p95_ms": 8.956616002251394,
+ "thresholds": [
+  {
+   "threshold": 0.0,
+   "coverage": 0.758,
+   "precision": 0.05474934036939314,
+   "chars_saved": 0.004682986163904516
+  },
+  {
+   "threshold": 0.01,
+   "coverage": 0.602,
+   "precision": 0.06893687707641195,
+   "chars_saved": 0.004682986163904516
+  },
+  {
+   "threshold": 0.05,
+   "coverage": 0.267,
+   "precision": 0.09550561797752809,
+   "chars_saved": 0.001642086057473012
+  },
+  {
+   "threshold": 0.1,
+   "coverage": 0.138,
+   "precision": 0.07971014492753623,
+   "chars_saved": 0.0006689980234149308
+  },
+  {
+   "threshold": 0.2,
+   "coverage": 0.0725,
+   "precision": 0.0896551724137931,
+   "chars_saved": 0.0003953170138360955
+  },
+  {
+   "threshold": 0.3,
+   "coverage": 0.0415,
+   "precision": 0.03614457831325301,
+   "chars_saved": 9.122700319294511e-05
+  },
+  {
+   "threshold": 0.5,
+   "coverage": 0.0085,
+   "precision": 0.0,
+   "chars_saved": 0.0
+  }
+ ],
+ "by_family": {
+  "False": {
+   "cases": 1919,
+   "acc@1": 0.3113792810401972,
+   "acc@5": 0.636440894025665,
+   "full_exact": 0.03804064616988015,
+   "sugg_exact": 0.09953100573215216,
+   "edit_sim": 0.22967192824211669,
+   "correctly_silent": 0.3745819397993311
+  },
+  "True": {
+   "cases": 81,
+   "acc@1": 0.2868369351669941,
+   "acc@5": 0.656188605108055,
+   "full_exact": 0.037037037037037035,
+   "sugg_exact": 0.13580246913580246,
+   "edit_sim": 0.24686948853615523,
+   "correctly_silent": 0.5
+  }
+ },
+ "by_length": {
+  "1-3": {
+   "cases": 642,
+   "acc@1": 0.351875,
+   "acc@5": 0.751875,
+   "full_exact": 0.11838006230529595,
+   "sugg_exact": 0.18691588785046728,
+   "edit_sim": 0.4196521287642783,
+   "correctly_silent": 0.4731182795698925
+  },
+  "4-7": {
+   "cases": 901,
+   "acc@1": 0.3086938261234775,
+   "acc@5": 0.631037379252415,
+   "full_exact": 0.0,
+   "sugg_exact": 0.05438401775804662,
+   "edit_sim": 0.15696580519000053,
+   "correctly_silent": 0.2894736842105263
+  },
+  "8+": {
+   "cases": 457,
+   "acc@1": 0.30047345282380794,
+   "acc@5": 0.6112614135948596,
+   "full_exact": 0.0,
+   "sugg_exact": 0.07221006564551423,
+   "edit_sim": 0.10917724666344276,
+   "correctly_silent": 0.45588235294117646
+  }
+ }
+}

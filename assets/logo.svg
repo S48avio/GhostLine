@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="200" viewBox="0 0 640 200" role="img" aria-labelledby="title desc">
+  <title id="title">GhostLine</title>
+  <desc id="desc">GhostLine logo: a ghost next to a line of Python code whose completion is shown as faded ghost text.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1f2e"/>
+      <stop offset="1" stop-color="#11131c"/>
+    </linearGradient>
+    <linearGradient id="ghost" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f1ff"/>
+      <stop offset="1" stop-color="#c9c2f2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="200" rx="28" fill="url(#bg)"/>
+
+  <!-- ghost -->
+  <g transform="translate(48 34)">
+    <path d="M56 0C25 0 4 23 4 54v78l16-13 17 13 19-13 19 13 17-13 16 13V54C108 23 87 0 56 0z" fill="url(#ghost)"/>
+    <ellipse cx="38" cy="54" rx="9" ry="12" fill="#1b1f2e"/>
+    <ellipse cx="74" cy="54" rx="9" ry="12" fill="#1b1f2e"/>
+    <ellipse cx="41" cy="50" rx="3" ry="4" fill="#ffffff"/>
+    <ellipse cx="77" cy="50" rx="3" ry="4" fill="#ffffff"/>
+  </g>
+
+  <!-- name -->
+  <text x="190" y="88" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="52" font-weight="700" fill="#f4f1ff" letter-spacing="1">Ghost<tspan fill="#a99cf5">Line</tspan></text>
+
+  <!-- a line of code with its ghost completion -->
+  <!-- one text run: the cursor is a character, so it sits after "range(" in any font -->
+  <text x="192" y="140" font-family="JetBrains Mono, Fira Code, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="22"><tspan fill="#ff8fa3">for</tspan><tspan fill="#e6e6f0"> i </tspan><tspan fill="#ff8fa3">in</tspan><tspan fill="#8fd3ff"> range</tspan><tspan fill="#e6e6f0">(</tspan><tspan fill="#a99cf5" font-weight="700">|</tspan><tspan fill="#e6e6f0" fill-opacity="0.38">len(items)):</tspan></text>
+  <text x="192" y="174" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#8c8aa8">n-gram line completion for Python · KenLM + beam search</text>
+</svg>

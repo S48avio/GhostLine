@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Data and models are rebuilt from scripts
+data/raw/*
+data/processed/*
+data/splits/*
+/models/
+third_party/
+!**/.gitkeep
+/data/tokens/
+/models/
+# per-case outputs are large; the summary JSONs are committed
+results/*.cases.jsonl
+# built from YOUR private projects: never publish
+data/eval/savio.jsonl

@@ -1,0 +1,26 @@
+[project]
+name = "autocomplete"
+version = "0.1.0"
+description = "GhostLine: Python line completion with a KenLM n-gram model and beam search"
+readme = "README.md"
+authors = [
+    { name = "Savio Sunny", email = "savio@aonz.in" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "kenlm",
+    "numpy>=2.5.4",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.28,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+]
+
+[tool.uv.sources]
+kenlm = { git = "https://github.com/kpu/kenlm", rev = "4cb443e" }

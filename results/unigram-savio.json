@@ -1,0 +1,110 @@
+{
+ "model": "unigram",
+ "split": "savio",
+ "beam": 4,
+ "perplexity": 100.8845315003227,
+ "overall": {
+  "cases": 375,
+  "acc@1": 0.1506629168340699,
+  "acc@5": 0.4250703093611892,
+  "full_exact": 0.0,
+  "sugg_exact": 0.0,
+  "edit_sim": 0.15956429975253503,
+  "correctly_silent": 0.0
+ },
+ "latency_p50_ms": 4.380151993245818,
+ "latency_p95_ms": 4.7000949998619035,
+ "thresholds": [
+  {
+   "threshold": 0.0,
+   "coverage": 1.0,
+   "precision": 0.0,
+   "chars_saved": 0.0
+  },
+  {
+   "threshold": 0.01,
+   "coverage": 1.0,
+   "precision": 0.0,
+   "chars_saved": 0.0
+  },
+  {
+   "threshold": 0.05,
+   "coverage": 1.0,
+   "precision": 0.0,
+   "chars_saved": 0.0
+  },
+  {
+   "threshold": 0.1,
+   "coverage": 0.0,
+   "precision": NaN,
+   "chars_saved": 0.0
+  },
+  {
+   "threshold": 0.2,
+   "coverage": 0.0,
+   "precision": NaN,
+   "chars_saved": 0.0
+  },
+  {
+   "threshold": 0.3,
+   "coverage": 0.0,
+   "precision": NaN,
+   "chars_saved": 0.0
+  },
+  {
+   "threshold": 0.5,
+   "coverage": 0.0,
+   "precision": NaN,
+   "chars_saved": 0.0
+  }
+ ],
+ "by_family": {
+  "False": {
+   "cases": 375,
+   "acc@1": 0.1506629168340699,
+   "acc@5": 0.4250703093611892,
+   "full_exact": 0.0,
+   "sugg_exact": 0.0,
+   "edit_sim": 0.15956429975253503,
+   "correctly_silent": 0.0
+  },
+  "True": {
+   "cases": 0,
+   "acc@1": NaN,
+   "acc@5": NaN,
+   "full_exact": NaN,
+   "sugg_exact": NaN,
+   "edit_sim": NaN,
+   "correctly_silent": NaN
+  }
+ },
+ "by_length": {
+  "1-3": {
+   "cases": 116,
+   "acc@1": 0.39057239057239057,
+   "acc@5": 0.5791245791245792,
+   "full_exact": 0.0,
+   "sugg_exact": 0.0,
+   "edit_sim": 0.33477011494252873,
+   "correctly_silent": 0.0
+  },
+  "4-7": {
+   "cases": 169,
+   "acc@1": 0.18819599109131402,
+   "acc@5": 0.4354120267260579,
+   "full_exact": 0.0,
+   "sugg_exact": 0.0,
+   "edit_sim": 0.10984784446322905,
+   "correctly_silent": 0.0
+  },
+  "8+": {
+   "cases": 90,
+   "acc@1": 0.0695517774343122,
+   "acc@5": 0.38253477588871715,
+   "full_exact": 0.0,
+   "sugg_exact": 0.0,
+   "edit_sim": 0.02709992621757328,
+   "correctly_silent": 0.0
+  }
+ }
+}
